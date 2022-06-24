@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>가상의사선택</title>
+  <style>
+    p {
+      border: 1px solid #333;
+    }
+    p::before {
+      content: '';
+      border-left: 5px solid crimson;
+    }
+    p:after {
+      content: '뒤에 삽입';
+      color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat odit, deleniti iste ipsam laudantium, repellendus cum ea ab illo molestias libero? Nulla harum, dolores error eligendi corrupti repellat modi neque.</p>
+</body>
+</html>

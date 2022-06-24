@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a {
+      color: 000; text-decoration: none;
+    }
+    /* 속성은 []로 표현 */
+
+    /* a태그에 title속성이 있으면 */
+    a[title] {
+      background-color: yellowgreen;
+    }
+    /* a태그 title의 속성값이 '검색엔진' */
+    a[title='검색엔진'] {
+      border: 1px solid red;
+    }
+
+    /* a 태그의 title 속성값이 'na'로 '시작'하면 */
+    a[title^='na'] {
+      font-weight: bold;
+    }
+
+    /* a태그의 href속성값이 'et '로 끝나면 */
+    a[href$='et'] {
+      color: darkcyan;
+    }
+
+    /* a태그의 title속성값중 연결이 독립단어로 존재하면 */
+    a[title~='연결'] {
+      font-size: 2em;
+    }
+
+    /* a태그의 title 속성값이 정확하게 일치하거나 -으로 연결되면 */
+    a[title|='nate'] {
+      color: #fff;
+    }
+
+    a[title|='google'] {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h2>속성 선택</h2>
+  <hr>
+  <ul>
+    <li><a href="#" title="검색엔진">검색사이트</a></li>
+    <li><a href="http://msn.com">MSN</a></li>
+    <li><a href="http://google.com" title="google-연결">Google</a></li>
+    <li><a href="http://nate.com" title="nate-연결">Nate 연결</a></li>
+    <li><a href="http://nate.com" title="nate">Nate</a></li>
+    <li><a href="http://zum.com" title="연결 site">Zum</a></li>
+    <li><a href="http://naver.com" title="site">Naver</a></li>
+    <li><a href="http://daum.net" title="daum">Daum</a></li>
+  </ul>
+</body>
+</html>
